@@ -1,0 +1,286 @@
+
+/* Regiao Cabeçalho */
+header {
+    background-color: #e6e6f1;
+    color: rgb(0, 0, 0);
+    
+}
+
+.caixa a:hover{
+    color: rgb(75, 151, 4)
+}
+
+
+header>div>a>img {
+    width: 150px;
+}
+header>div>nav>div {
+    padding: 10px;
+}
+header>div>nav>div a, header>div>nav>div a:visited, header>div>nav>div a:link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 120%;
+}
+
+.caixa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+/* /* CORPO DA PAGINA **/
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f9f6;
+      color: #333;
+      line-height: 1.6;
+    }
+
+   section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+  
+    
+section h2{
+    color: #2e7d32;
+}
+main{
+    text-align: center;
+      background-color: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-bottom: 10px;   
+}
+
+a:hover{
+    color: rgb(250, 1, 1)
+}
+
+
+
+
+
+
+/* Rodape */
+
+    footer {
+      text-align: center;
+      background: #2e7d32;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+
+
+    /* responsividade mediaquary */
+    /* 1️⃣ Telas muito grandes (acima de 1440px) */
+@media (min-width: 1440px) {
+  section {
+    grid-column: 4 / span 6;
+  }
+}
+
+/* 2️⃣ Desktop médio (até 1200px) */
+@media (max-width: 1200px) {
+  section {
+    grid-column: 2 / span 10;
+  }
+}
+
+/* 3️⃣ Tablet horizontal (até 992px) */
+@media (max-width: 992px) {
+  section {
+    grid-column: 2 / span 10;
+  }
+  nav div {
+    margin: 0 8px;
+  }
+}
+
+/* 4️⃣ Tablet vertical (até 768px) */
+@media (max-width: 768px) {
+  section {
+    grid-column: 1 / span 12;
+  }
+  nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* 5️⃣ Celulares (até 480px) */
+@media (max-width: 480px) {
+  body {
+    grid-gap: 8px;
+  }
+  section {
+    padding: 16px;
+  }
+  img {
+    width: 120px;
+  }
+}
+    @media only screen and (max-width: 600px) {
+    .flex {
+        flex-wrap: wrap;
+    }
+    header>div.flex-hj {
+        justify-content: center;
+    }
+} 
+
+
+
+
+/* Formulario de contato */
+form>div{
+    padding: 5px;
+}
+
+form>div>label {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form>div>input, form>div>textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    color: #333;
+}
+
+
+/* teste */
+
+
+
+
+.p-15 {
+  padding: 40px;
+  background-color: #f5f9f6;
+}
+
+/* Título */
+.titulo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo-bg-principal {
+  background-color: #007a33;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 8px;
+}
+
+/* ----------- GRID DA EQUIPE ----------- */
+.flex {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colunas iguais */
+  gap: 20px;
+  text-align: center;
+}
+
+/* Imagens da equipe */
+.circulo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #007a33;
+  margin-bottom: 10px;
+}
+
+/* Texto dos nomes e funções */
+.text-principal {
+  color: #007a33;
+}
+
+.text-negrito {
+  font-weight: bold;
+}
+
+/* Centralização */
+.text-centralizado {
+  text-align: center;
+}
+
+/* ----------- RESPONSIVIDADE ----------- */
+
+/* Tablets (até 992px) → 3 colunas */
+@media (max-width: 992px) {
+  .flex {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Celulares (até 600px) → 2 colunas */
+@media (max-width: 600px) {
+  .flex {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Telas pequenas (até 400px) → 1 coluna */
+@media (max-width: 400px) {
+  .flex {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.projeto {
+    background: #ffffff;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    padding: 15px;
+    text-align: center;
+}
+
+.projeto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
