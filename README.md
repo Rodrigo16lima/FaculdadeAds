@@ -27,3 +27,6 @@ O presente projeto consiste na criação de um site para uma ONG, com o objetivo
 5. Considerações Finais
 O projeto foi desenvolvido com atenção à clareza das informações e facilidade de navegação. Espera-se que o site possa ser uma ferramenta útil para a ONG alcançar mais pessoas e engajar voluntários.
 
+Anexos:
+- Link para o repositório:(https://github.com/Rodrigo16lima/FaculdadeAds)
+- Arquivos do site (HTML, CSS, JavaScript)
