@@ -67,3 +67,9 @@ document.getElementById("cadastro").addEventListener("submit", function(e){
     if(v.length > 5) v = v.replace(/(\d{5})(\d{0,3})/, "$1-$2");
     cep.value = v;
   });
+
+
+
+
+
+  
